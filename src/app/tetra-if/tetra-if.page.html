@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="folder/Inbox" color="primary" text="Atras"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">
+      <h1>Productos Tetra Pack </h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger">
+  <ion-searchbar showCancelButton="never" (ionInput)= "getItems($event)" color="success">
+
+  </ion-searchbar>
+ 
+  <ion-list inset lines="full">
+    <ion-item *ngFor="let p of items" >
+      <ion-thumbnail slot="start">
+        <ion-img [src]="p.image"></ion-img>
+      </ion-thumbnail>
+     <button (click) = "viewList(p.id)">{{ p.nombre }}</button>
+
+
+    </ion-item>
+
+
+  </ion-list>
+
+
+</ion-content>
+

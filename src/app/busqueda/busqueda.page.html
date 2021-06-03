@@ -1,0 +1,95 @@
+<ion-header> <!-- Aqui se coloca el Toobar (Barra de arriba) de la parte de arriba junto con e botón y el nombre -->
+  <ion-toolbar color="success"><!--Inicio de l Toolbar-->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="folder/Inbox"  text="Atras"></ion-back-button>><!-- botón de Back-->
+    </ion-buttons>
+    <ion-title color="primary">Busqueda</ion-title> <!-- Titulo de la pagina dentro del Toolbar-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background"> <!-- Aqui con Background se coloca la iamgen de fondo-->
+  <ion-grid padding class="grid-container"> <!-- Grid donde van a ir los botones de los materiales-->
+    <ion-row > <!-- La primera fila -->
+     
+      <ion-col> <!-- la columna de la primera fila-->
+       <ion-button  shape="round" color="tertiary" (click)="irpapel()" ><!-- el boton que te va a llevar -->
+         <ion-icon slot="start" name="cube"></ion-icon>
+         Papel y Cartón
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+
+     <ion-col>
+       <ion-button  shape="round" color="light" (click)="irvidrio()">
+         Vidrio
+         <ion-icon slot="end" name="wine"></ion-icon>
+       </ion-button>
+     </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button  shape="round" color="success" (click)="irplastico()">
+          <ion-icon slot="start" name="pint"></ion-icon>
+          Plastico
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+         <ion-button  shape="round" color="medium" (click)="irmetal()">
+           Metales
+           <ion-icon slot="end" name="rocket"></ion-icon>
+         </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button  shape="round" color="primary" (click)="irtetra()">
+          <ion-icon slot="start" name="pint"></ion-icon>
+          Tetra Pack
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row >
+      <ion-col >
+         <ion-button  shape="round" color="success" (click)="irtec()">
+           Productos Tecnologicos
+           <ion-icon slot="end" name="rocket"></ion-icon>
+         </ion-button>
+      </ion-col>
+    </ion-row>-->
+
+    <!--<ion-row>
+      <ion-col >
+         <ion-button  shape="round" color="success" (click)="irnoreci()">
+           No reciclables 
+           <ion-icon slot="end" name="rocket"></ion-icon>
+         </ion-button>
+      </ion-col>
+    </ion-row>-->
+    
+    
+  </ion-grid>
+ 
+  
+    
+  
+
+  <!-- <ion-searchbar showCancelButton="never" (ionInput)= "getItems($event)"></ion-searchbar>
+ 
+  <ion-list inset *ngFor="let p of items" >
+    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+      
+      <ion-label>{{ p.nombre }}</ion-label>
+    </ion-item>
+
+  </ion-list>-->
+
+</ion-content>

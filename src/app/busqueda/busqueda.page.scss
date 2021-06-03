@@ -1,0 +1,10 @@
+ion-content.background{
+    --background: url(../../assets/imgs/2.png) 0 0/100% 100% no-repeat;
+  }
+
+  ion-grid.grid-container{
+    display: grid;
+    height: 400px;
+    justify-content: center;
+    grid-gap: 25px 50px;
+  }

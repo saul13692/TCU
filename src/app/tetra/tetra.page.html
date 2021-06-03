@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="folder/Inbox" color="primary" text="Atras"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">
+      <h1>Tetra Pack</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-tabs >
+    <ion-tab-bar slot="bottom" color="success" >
+      <ion-tab-button tab="schedule" (click)="irtetraif()">
+        <ion-icon name="search-circle-outline" size="large" color="primary"></ion-icon>
+        <ion-label color="primary">Buscar</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
