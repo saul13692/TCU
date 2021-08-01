@@ -1,9 +1,9 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core'; /* estas son funciones que hay que habiitar*/
 import {LoadingController, IonSlides} from '@ionic/angular';
 
 declare var google;
 
-interface Marker {
+interface Marker { /* colocamos las variables a utilizar y el tipo de variable */
   lat: number;
   lng: number;
   title: string;
@@ -25,7 +25,7 @@ export class MapaPage implements OnInit {
 
   mapRef = null;
 
-  markers: Marker[] = [
+  markers: Marker[] = [ /* aqui van los marcadores */
     {
       lat:   9.9757138,
       lng: -84.8318928,
@@ -110,3 +110,5 @@ export class MapaPage implements OnInit {
 
 
 }
+/*habilitamos todo, este mapa hay que cambiarlo ya que cobran por su uso, habilitamos el mapa en
+index.html*/

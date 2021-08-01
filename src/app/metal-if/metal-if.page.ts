@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-
+/* aquivan las listas de lso productos que son del materrial seleccionado*/
 @Component({
   selector: 'app-metal-if',
   templateUrl: './metal-if.page.html',
@@ -11,10 +11,10 @@ export class MetalIfPage implements OnInit {
   
   
 
- lista = [{id: 32, nombre:"Tableta Guayabita",image:"../../assets/productos/32.jpg"},
+ lista = [{id: 32, nombre:"Tableta Guayabita",image:"../../assets/productos/32.jpg"}, /* aqi estan las lista de los productos*/
           {id: 33, nombre:"Chocolate Gallito Corazón Almendra",image:"../../assets/productos/33.jpg"},
           {id: 38, nombre:"Helado Mmmio",image:"../../assets/productos/38.jpg"},
-          {id: 39, nombre:"Cremoleta dos pinos ",image:"../../assets/productos/39.jpg"},
+          {id: 39, nombre:"Cremoleta dos pinos ",image:"../../assets/productos/39.jpg"}, /* image se coloca la dieccion de la fotp, lo cuales local*/
           {id: 41, nombre:"Leche Pinito En Polvo",image:"../../assets/productos/41.jpg"},
           {id: 42, nombre:"Leche Inline en Polvo",image:"../../assets/productos/42.png"},
           {id: 43, nombre:"Leche Delactomy en Polvo",image:"../../assets/productos/43.png"},
@@ -42,7 +42,7 @@ export class MetalIfPage implements OnInit {
 
   }
 
-  async viewList(id) {
+  async viewList(id) { /* aqui son las alertas e los colores de los basureros*/
     let vlista= this.lista.filter(function(e,i){return e.id==id})[0];
 
     let alert = await this.alertController.create({

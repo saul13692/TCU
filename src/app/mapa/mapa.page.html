@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header><!---Aqui colocams es la parte de arriba el titulo-->
   <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="folder/Inbox" text="Atras"></ion-back-button>
@@ -10,14 +10,14 @@
 <ion-content [fullscreen]="true">
   <div id="map"></div>
   <ion-slides (ionSlideDidChange)="onSlideDidChange()">
-    <ion-slide *ngFor="let marker of markers">
+    <ion-slide *ngFor="let marker of markers"> <!-- Esto es para que pase los lugares con slide-->
       <ion-card>
         <ion-item>
           <ion-thumbnail slot="start">
             <img [src]="marker.image">
           </ion-thumbnail>
           <ion-label class="ion-text-wrap">
-            <h2>{{ marker.title }}</h2>
+            <h2>{{ marker.title }}</h2><!-- aqui se va a mostrar el titulo-->
             <p>{{ marker.text }}</p>
           </ion-label>
         </ion-item>

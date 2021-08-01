@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content color="danger">
-  <ion-searchbar showCancelButton="never" (ionInput)= "getItems($event)" color="success">
+  <ion-searchbar showCancelButton="never" (ionInput)= "getItems($event)" color="success"> <!-- habilitamos la lista de los productos-->
 
   </ion-searchbar>
  
-  <ion-list inset lines="full">
+  <ion-list inset lines="full"> <!-- aqui va una lista y que muestre nombre, imagen-->
     <ion-item *ngFor="let p of items" >
       <ion-thumbnail slot="start">
         <ion-img [src]="p.image"></ion-img>

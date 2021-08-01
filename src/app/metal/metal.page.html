@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header><!-- aqui es la parte de arriba donde indica el titulo-->
   <ion-toolbar color="medium">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="folder/Inbox" text="Atras"></ion-back-button>
@@ -7,10 +7,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="background">
+<ion-content class="background"> <!-- aqui colocamos la imagen de atras-->
   <ion-tabs >
     <ion-tab-bar slot="bottom" color="warning">
-      <ion-tab-button tab="schedule" (click)="irmetalif()">
+      <ion-tab-button tab="schedule" (click)="irmetalif()"> <!-- redirecciona a la pagina de la lista de producctos de metal-->
         <ion-icon name="search-circle-outline" size="large"></ion-icon>
         <ion-label>Buscar</ion-label>
       </ion-tab-button>

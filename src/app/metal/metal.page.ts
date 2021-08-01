@@ -13,7 +13,7 @@ export class MetalPage implements OnInit {
   ngOnInit() {
   }
   irmetalif(){
-    this.router.navigateByUrl("/metal-if")
+    this.router.navigateByUrl("/metal-if") /* aqui es donde redirecciona cuando sea tocado el boton de buscar*/
   }
 
 }

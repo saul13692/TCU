@@ -26,7 +26,7 @@ export class BusquedaPage implements OnInit {
   ngOnInit() {
   }
   irplastico(){
-    this.router.navigateByUrl("/plastico")
+    this.router.navigateByUrl("/plastico") /* aqui estan las direcciones de cada boton a utilizar*/
   }
   irpapel(){
     this.router.navigateByUrl("/papel")
