@@ -18,7 +18,7 @@ export class AppComponent {
     { title: 'Plastico', ruta: '/plastico', icon: 'search'}, 
     { title: 'Carton', ruta: '/compa', icon: 'search'}, 
     { title: 'Papel', ruta: '/mapa', icon: 'search'},
-  ]; // Estos labels no están en función, pero de igual forma se pueden habilitar
+  ]; /* Estos labels no están en función, pero de igual forma se pueden habilitar*/
   
   constructor() {}
   
